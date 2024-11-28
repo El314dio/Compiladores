@@ -61,7 +61,7 @@ public class Parser {
 
     void letStatement () {
         match(TokenType.LET);
-        var id = currentToken.lexeme;
+        String id = currentToken.lexeme;
         match(TokenType.IDENT);
         match(TokenType.EQ);
         expr();
@@ -70,4 +70,3 @@ public class Parser {
     }
 
 }
-
